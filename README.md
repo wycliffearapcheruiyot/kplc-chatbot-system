@@ -1,9 +1,17 @@
 # KPLC Chatbot System
 
+![KPLC Chatbot screenshot](docs/screenshot.png)
+
 A support chatbot for Kenya Power (KPLC) customers, built as seven
 cooperating services rather than one monolith: a gateway, two frontends, a
 GPU inference service, a dataset sync pipeline, a knowledge-base builder,
 and a managed database layer.
+
+## Try it live
+
+https://kplc-chatbot-frontend.vercel.app
+
+Note: the chatbot runs inference on a Kaggle GPU notebook that starts on demand rather than staying always-on (this is what keeps hosting cost near zero). The first message after a period of inactivity takes about 3 minutes to boot the notebook before it responds. Every message after that is fast.
 
 ## Why this exists
 
